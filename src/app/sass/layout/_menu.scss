@@ -1,0 +1,71 @@
+@import "../abstracts/colors";
+
+.menu {
+  height: 100vh;
+  margin: auto;
+  .menu__items {
+    max-width: 600px;
+    min-width: 200px;
+    padding: 2rem 4rem;
+    border: 4px solid $secondary;
+    border-color: $secondary;
+    border-radius: 1.5rem;
+    margin: 20rem auto 0 auto;
+
+    h1 {
+      width: fit-content;
+      margin: 0 auto 2rem auto;
+    }
+    .menu__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+  }
+  .menu__pedir {
+    padding: 1rem;
+    color: black;
+    background-color: $secondary;
+    width: fit-content;
+    margin: 3rem auto 0 auto;
+  }
+
+  .arrow-container {
+    display: flex;
+    width: fit-content;
+    margin: 2rem auto;
+    animation: slidein 1s infinite ease-in-out;
+    animation-direction: alternate-reverse;
+
+    .arrow-container__bottom {
+      border-top: 55px solid $accent1;
+      border-left: 45px solid transparent;
+      border-right: 45px solid transparent;
+      width: 0;
+      height: 0;
+      margin: 5px;
+      
+    }
+
+    @keyframes slidein {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.3);
+      }
+    }
+  }
+  .chatWhatsapp {
+    display: block;
+    width: fit-content;
+    margin: 3rem auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    .menu__items {
+      margin: 20rem 2rem 0 2rem;
+    }
+  }
+}

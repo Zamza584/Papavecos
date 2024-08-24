@@ -1,0 +1,72 @@
+@import "../abstracts/colors";
+
+.nav {
+  margin-top: 3rem;
+  display: flex;
+  margin-right: 9rem;
+  .nav__items {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 2rem;
+    margin-left: auto;
+    a {
+      font-family: "Libre Caslon Text";
+    }
+  }
+  .hamburger-menu {
+    cursor: pointer;
+    display: none;
+  }
+}
+.nav-mobile { 
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .nav {
+    margin-right: 4rem;
+    .nav__items {
+      display: none;
+    }
+    .hamburger-menu {
+      
+      display: block;
+      margin-left: auto;
+      transform: scale(2);
+    }
+    .nav-mobile {
+      display: block;
+      z-index: 2;
+      position: fixed;
+      background-color: $secondary;
+      width: 70%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      .close-button {
+        background-color: $primary;
+
+        & > * {
+          cursor: pointer;
+          margin: 3rem;
+          transform: scale(3);
+        }
+      }
+      .nav-mobile__items {
+        display: flex;
+        width: fit-content;
+        flex-direction: column;
+        margin: 30% auto;
+        li {
+          list-style-type: none;
+          margin-bottom: 2rem;
+          a {
+            color: $primary;
+            font-family: "Libre Caslon Text";
+          }
+        }
+      }
+    }
+  }
+}

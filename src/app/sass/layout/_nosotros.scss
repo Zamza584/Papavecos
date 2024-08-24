@@ -1,0 +1,11 @@
+.nosotros { 
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    .nosotros__container { 
+        width: 50%;
+        margin-bottom: 7rem;
+
+    }
+}
