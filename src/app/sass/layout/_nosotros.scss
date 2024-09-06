@@ -1,11 +1,26 @@
-.nosotros { 
-    height: 100vh;
-    display: flex; 
+.nosotros {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p { 
+    line-height: 1.9rem;
+  }
+  .nosotros__container {
+    width: 50%;
+    margin-bottom: 7rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nosotros {
+    height: initial;
+    display: flex;
     justify-content: center;
     align-items: center;
-    .nosotros__container { 
-        width: 50%;
-        margin-bottom: 7rem;
-
+    .nosotros__container {
+      width: initial;
+      margin: 3rem 2rem;
     }
+  }
 }

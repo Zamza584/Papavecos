@@ -1,3 +1,5 @@
+"use client"
+
 import papaRellena from "./assets/papa-rellena.jpg";
 import chiPescado from "./assets/chi-pescado.jpg";
 import deco1 from "./assets/deco1.jpg"
@@ -5,13 +7,51 @@ import yape from "./assets/yape.png"
 import Image from "next/image";
 import Link from "next/link";
 
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+
+
 
 export default function Home() {
+
+
+  useGSAP(
+    () => {
+      const contenido = gsap.utils.toArray('.contenido')
+      // gsap code here...
+
+      contenido.forEach((contenido, i) => {
+        gsap.fromTo(contenido, {
+          opacity: 0.2,
+          x: -200
+        },
+          {
+            scrollTrigger: {
+              trigger: contenido,
+              toggleActions: "restart none restart none",
+              start: "top bottom",
+            },
+            opacity: 1,
+            duration: 2,
+            x: 0
+
+          })
+
+      }); // <-- automatically reverted
+    },
+  );
+
   return (
     <div className="home">
       <main>
         <div className="home__anuncios">
-
         </div>
         <div className="home__entrada">
           <div className="wrapper">

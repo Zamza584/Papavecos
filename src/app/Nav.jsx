@@ -7,11 +7,10 @@ import { IoClose } from "react-icons/io5";
 
 export default function Nav() {
     const [toggle, setToggle] = useState(false)
-    
+
 
     function showMenu() {
         setToggle(() => !toggle)
-
     }
 
     return (

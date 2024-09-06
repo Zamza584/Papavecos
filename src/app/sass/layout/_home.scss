@@ -90,6 +90,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4rem;
+  flex-wrap: wrap;
 
   .footer__links {
     display: flex;
@@ -145,5 +146,14 @@
         width: 100%;
       }
     }
+  }
+}
+@media screen and (max-width: 400px) {
+  .home__entrada > .wrapper .contenido > * {
+    width: fit-content;
+    margin: 1rem;
+  }
+  .home__entrada > .wrapper .contenido > h1 {
+    margin: auto;
   }
 }

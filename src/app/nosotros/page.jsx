@@ -1,14 +1,15 @@
 export default function Menu() {
     return (
-
         <div className="nosotros">
             <div className="nosotros__container">
                 <h1>Nosotros</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod quibusdam ex harum quis, sunt maxime accusamus magni nesciunt quidem placeat qui consequatur, non suscipit, maiores incidunt doloribus provident molestias nisi iste! Distinctio corporis nemo veniam aperiam, sed hic quisquam? Laboriosam!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, exercitationem nulla autem, doloribus assumenda nesciunt quaerat voluptatibus tenetur debitis eaque, vero ullam officiis esse voluptas nisi deserunt natus. Iste, minima?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, consequuntur expedita alias voluptate provident, consequatur ducimus quidem id nemo sit a blanditiis. Illum laboriosam recusandae facere tempore ipsum ut ducimus quia, exercitationem nisi vel, magnam et nesciunt libero iure vitae!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus quod accusamus. Dignissimos, nobis unde! Eius delectus nostrum hic soluta!
+                <p>¡Bienvenidos a Papavecos! En nuestro rincón del sabor, nos dedicamos a ofrecer una experiencia culinaria única y deliciosa. Somos apasionados de la buena comida, y eso se refleja en cada uno de nuestros productos.
                 </p>
+                <p>Ofrecemos una variedad de opciones irresistibles, desde la tradicional papa rellena, que combina lo mejor de la papa con un relleno delicioso, hasta nuestros chicharrones de pota y de pescado, preparados con esmero y utilizando ingredientes frescos y de alta calidad. Cada bocado está pensado para brindarte una explosión de sabores que te hará volver por más.
+                </p>
+                <p>Nuestra misión es ofrecerte productos que no solo sean sabrosos, sino también auténticos y preparados con pasión. En Papavecos, creemos que la comida es más que una simple comida; es una experiencia que une a las personas y crea momentos especiales.
+                </p>
+                <p>¡Te invitamos a probar nuestras delicias y a formar parte de la familia Papavecos! Estamos aquí para hacer que cada comida sea memorable.</p>
             </div>
         </div>
     )
