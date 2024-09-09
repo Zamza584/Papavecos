@@ -13,6 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link href='https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap' rel='stylesheet' type='text/css' />
+
+      </head>
       <body className={inter.className} suppressHydrationWarning={true}>
         <header>
           <Nav />
