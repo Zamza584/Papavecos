@@ -24,6 +24,11 @@
 }
 
 @media screen and (max-width: 950px) {
+  .nav-mobile {
+    display: block;
+    visibility: hidden;
+  }
+
   .nav {
     margin-right: 4rem;
     .nav__items {
@@ -35,7 +40,6 @@
       transform: scale(2);
     }
     .nav-mobile {
-      display: block;
       z-index: 2;
       position: fixed;
       background-color: $secondary;
@@ -73,6 +77,5 @@
 @media screen and (max-width: 400px) {
   .nav {
     margin-right: 2rem;
- 
   }
 }
